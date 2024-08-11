@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="ProductDetails">
+    <xs:complexType>
+      <xs:sequence>
+    
+        <xs:element name="Product" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductID" type="xs:string"/>
+              <xs:element name="Name" type="xs:string"/>
+              <xs:element name="Type" type="xs:string"/>
+              <xs:element name="Price" type="PriceType"/>
+              <xs:element name="ModelNo" type="ModelNoType"/>
+              <xs:element name="Colour" type="xs:string"/>
+              <xs:element name="Warranty" type="WarrantyType"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="PriceType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0.01"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ModelNoType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="3"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="WarrantyType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

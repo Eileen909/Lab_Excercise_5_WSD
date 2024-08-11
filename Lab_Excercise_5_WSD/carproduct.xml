@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProductDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="carproduct.xsd">
+                <?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+
+  <Product id="PDT001">
+    <ProductID>CGS098</ProductID>
+    <Name>Continental GTC Speed</Name>
+    <Type>Sports Car</Type>
+    <Price>2300000.00</Price>
+    <ModelNo>2024</ModelNo>
+    <Colour>Shiny Green</Colour>
+    <Warranty>5</Warranty>
+  </Product>
+  <Product id="PDT002">
+    <ProductID>BEA876</ProductID>
+    <Name>Bentayga EWB Azure</Name>
+    <Type>SUV</Type>
+    <Price>2506000.00</Price>
+    <ModelNo>2023</ModelNo>
+    <Colour>Shiny Black</Colour>
+    <Warranty>10</Warranty>
+  </Product>
+  <Product id="PDT003">
+    <ProductID>SPX123</ProductID>
+    <Name>Flying Spur X</Name>
+    <Type>Car</Type>
+    <Price>2000800.00</Price>
+    <ModelNo>2019</ModelNo>
+    <Colour>Navy Blue</Colour>
+    <Warranty>3</Warranty>
+  </Product>
+</ProductDetails>
